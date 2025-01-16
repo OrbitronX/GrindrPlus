@@ -1,4 +1,4 @@
-name: Android APK Build and Upload to Telegram & Artifacts
+name: Build and Upload Artifacts
 
 on:
   push:
