@@ -66,7 +66,6 @@ object GrindrPlus {
     private val userAgent = "a5.t"
     private val userSession = "com.grindrapp.android.storage.b"
     private val deviceInfo = "j3.t"
-    private val profileRepo = "com.grindrapp.android.persistence.repository.ProfileRepo"
     private val ioScope = CoroutineScope(Dispatchers.IO)
 
     fun init(modulePath: String, application: Application, logger: Logger) {
@@ -119,8 +118,7 @@ object GrindrPlus {
         instanceManager.hookClassConstructors(
             userAgent,
             userSession,
-            deviceInfo,
-            profileRepo
+            deviceInfo
         )
 
         instanceManager.setCallback(userSession) { uSession ->

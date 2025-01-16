@@ -472,7 +472,6 @@ class SettingsFragment : Fragment() {
             setTextColor(Colors.text_secondary_dark_bg)
         }
         container?.addView(otherSettingsTitle)
-
         container?.addView(
             createDynamicSettingView(
                 context,
@@ -490,6 +489,7 @@ class SettingsFragment : Fragment() {
                 }
             )
         )
+
         container?.addView(
             createDynamicSettingView(
                 context,
